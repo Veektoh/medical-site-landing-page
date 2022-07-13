@@ -1,0 +1,463 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+body{
+    font-family: 'Mulish';
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    height: 100%;
+    margin: 0 auto;
+    color: #7D7987;
+}
+h1,h2,h3 {
+    color: black;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+.hide-nav{
+    display:non;
+}
+.plain-btn{
+    border: 1px solid #458FF6;
+    background: white;
+    color:#458FF6;
+    border-radius: 30px;
+    padding: 1em 3em;
+    position: relative;
+    cursor: pointer;
+}
+.plain-btn:hover{
+    background: #458FF6;
+    color: white;
+}
+.color-btn{
+    background: #458FF6;
+    color:white;
+    border-radius: 30px;
+    padding: 1em 2em;
+    cursor: pointer;
+}
+.color-btn:hover{
+    border: 1px solid #458FF6;
+    background: white;
+    color: #458FF6;
+}
+.rm-button{
+    background: white;
+    color:#458FF6;
+    padding: 1em 0.3em;
+    cursor: pointer;
+    margin: 1em;
+    position: relative;
+}
+.inline-img-app{
+    display: inline;
+    max-width: 20%;
+    max-height: 30%;
+    position: absolute;
+    right: 20px
+}
+.inline-img-rm{
+    display: inline;
+    max-width: 20%;
+    max-height: 30%;
+    position: absolute;
+    top: 16px;
+    left: 80px;
+}
+#reviews h2, #reviews h3, #footer h2{
+    color: white;
+}
+
+
+#header{
+    margin: 1em 0;
+    width: 100%;
+}
+#nav-div{
+    width: 100%;
+}
+#logo-div{
+    width: 100%;
+}
+#logo-div img{
+    margin: 2em auto;
+}
+#banner-div{
+    width: 90%;
+    margin: 0 auto;
+}
+#banner-img-div{
+    width: 100%;
+    margin: 2em 0;
+}
+#banner-img-div img{
+    width: 80%;
+    margin: 0 auto;
+}
+#banner-text-div{
+    text-align: center;
+    margin: 2em auto;
+}
+#banner-text-div h1{
+    margin: 0.5em auto;
+}
+#consult-button{
+    margin-top: 1.5em;
+}
+
+
+#main{
+    width: 90%;
+    margin: 7em auto;
+}
+
+#services{
+    margin-bottom: 5em ;
+}
+#services-info-div{
+    text-align: center;
+    margin: 2.5em 0;
+}
+#services-info-div h2{
+    margin: 0.5em 0;
+}
+#services-div{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.services-card{
+    padding: 1.8em;
+    max-width: 300px;
+    max-height: 350px;
+    background: white;
+    box-shadow: 10px -10px 70px 40px rgba(229, 233, 246, 0.4);
+    border-radius: 20px;
+    margin: 1em auto;
+}
+.services-card img{
+    margin: 1.7em 0;
+}
+#service-button-div{
+    margin: 2em auto;
+    text-align: center;
+}
+
+#care-app{
+    width: 90%;
+    margin: 0 auto 5em;
+}
+.care-app-div{
+    margin: 5em 0;
+}
+.care-app-div h2{
+    margin: 1.5em 0 0.7em;
+}
+.care-app-div button{
+    margin: 1.5em 0 ;
+}
+.care-app-img-div{
+    width: 90%;
+}
+
+#reviews{
+    margin-bottom: 5em;
+}
+#reviews-div{
+    background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+    border-radius: 24px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1em 1em 2em;
+    color: white;
+}
+#review-title-div{
+    padding: 1em 1em;
+}
+#review-info{
+    margin: 1em;
+    font-size: 1rem;
+}
+#review-info img{
+    margin: 1em auto;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+#review-nav-div img{
+    margin: 2em auto;
+    width: 40%;
+}
+
+#article-title-div{
+    width: 80%;
+    margin: 4em auto;
+    text-align: center;
+}
+.article-card {
+    width: 90%;
+    margin: 3em auto;
+    background: #FFFFFF;
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    border-radius: 20px;
+}
+.article-card img{
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+}
+.article-card h3{
+    padding: 0.6em 1em;
+}
+.article-card p{
+    padding: 0 1em;
+}
+#article-viewall-div{
+    text-align: center;
+}
+
+
+#footer{
+    background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+    color: white;
+    padding: 3em 0; 
+}
+#footer-div {
+    display: grid;
+    justify-content: center;
+    grid-template-areas: 
+          "h h h"
+          "f f f"
+}
+#footer h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.footer-list{
+    margin: 2em;
+    width: 90%;
+}
+.footer-list ul{
+    list-style: none;
+}
+.footer-list a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    font-weight: 10;
+}
+#about{
+    padding: 0 2em;
+    width: 90%;
+    grid-area: h;
+}
+#about p{
+    margin: 1em 0;
+}
+
+@media (max-width: 568px) {
+    #nav-links-div ul{
+        list-style-type: none;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: center;
+    }
+    #nav-links-div ul li{
+        width: 100%;
+        background: #458FF6;
+        margin: 0;
+        padding: 0.7em;
+    }
+    #nav-links-div ul li a{
+        text-decoration: none;
+        color: black;
+        padding: 1em;
+    }
+    #nav-links-div ul li:hover{
+        background: white;
+        padding: 0.7em;
+    }
+    #nav-links-div ul li a:hover{
+        color: black;
+    }
+    #footer-div {
+        display: block;
+    }
+    #about{
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    #nav-links-div ul{
+        list-style-type: none;
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        background: #458FF6;
+    }
+    #nav-links-div ul li{
+        padding: 1em;
+    }
+    #nav-links-div ul li a{
+        text-decoration: none;
+        color: rgb(31, 21, 52, 1);
+    }
+    #nav-links-div ul li:hover{
+        background: white;
+    }
+
+}
+
+@media (min-width: 800px) {
+    #nav-div{
+        width: 75%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #nav-links-div ul{
+
+        list-style-type: none;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        white-space: nowrap;
+    }
+    #nav-links-div ul li{
+        padding: 1em;
+    }
+    #nav-links-div ul li:hover{
+        background: #458FF6;
+    }
+    #nav-links-div ul li a{
+        text-decoration: none;
+        color: rgb(31, 21, 52, 0.6);
+    }
+    .current-page{
+        color: rgb(31, 21, 52, 1) !important;
+    }
+    #logo-div{
+        width: 20%;
+    }
+    #logo-div img{
+        margin: 1em auto;
+    }
+    #logo-div img{
+        margin: 0;
+    }
+    #banner-div{
+        width: 75%;
+        display: flex;
+        margin: 4em auto;
+        align-items: center;
+    }
+    #banner-img-div{
+        order: 2;
+    }
+    #banner-text-div{
+        text-align: left;
+        order: 1;
+    }
+    #main{
+        width: 80%;
+    }
+    #services-info-div{
+       width: 80%;
+       margin: 2.5em auto;
+    }
+    #care-app{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto 5em;
+    }
+    .care-app-div{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5em auto;
+    }
+    .care-app-img-div{
+        width: 45%;
+    }
+    .care-app-img-div img{
+        max-width: 120%;
+    }
+    .care-app-text-div{
+        width: 36%;
+    }
+    .order1{
+        order: 1;
+    }
+    .order2 {
+        order: 2;
+    }
+    #reviews-div{
+        text-align: left;
+    }
+    #review-info-div{
+        display: flex;
+        width: 95%;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+    #review-info{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #review-info img{
+        margin: 1em 0;
+    }
+    .review-info-text-div{
+        margin-left: 1em;
+    }
+    #review-text {
+        width: 40%;
+    }
+    #review-title-div{
+        text-align: center;
+    }
+    #article-div{
+        display: flex;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .article-card {
+        margin: 3em 0.5em;
+    }
+}
+@media (min-width: 1080px){
+    #footer-div{
+        display: flex;
+        justify-content: space-evenly;
+        width: 80%;
+        margin: 0 auto;
+    }
+    #about{
+        flex: 3;
+        margin: 2em;
+        padding: 0 2em;
+        width: 100%;
+    }
+    .footer-list{
+        flex: 1;
+        margin: 2em;
+        width: 100%;
+    }
+}
