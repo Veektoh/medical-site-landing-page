@@ -19,8 +19,8 @@ img{
     display: block;
     max-width: 100%;
 }
-.hide-nav{
-    display:non;
+.nav-bar{
+    display: none;
 }
 .plain-btn{
     border: 1px solid #458FF6;
@@ -60,15 +60,24 @@ img{
     max-width: 20%;
     max-height: 30%;
     position: absolute;
-    right: 20px
+    right: 20px;
+    top: 15px;
 }
 .inline-img-rm{
     display: inline;
     max-width: 20%;
     max-height: 30%;
     position: absolute;
-    top: 16px;
+    top: 18px;
     left: 80px;
+}
+.short-border {
+    border: 1px solid black;
+    width: 2.5em;
+    margin: 1.2em 0;
+}
+.center{
+    margin: 1.2em auto;
 }
 #reviews h2, #reviews h3, #footer h2{
     color: white;
@@ -198,7 +207,7 @@ img{
 
 #article-title-div{
     width: 80%;
-    margin: 4em auto;
+    margin: 4em auto 0.5em;
     text-align: center;
 }
 .article-card {
@@ -235,13 +244,18 @@ img{
           "h h h"
           "f f f"
 }
+#footer-logo-div{
+    margin-bottom: 1.5em;
+}
 #footer h2{
     font-size: 1.5rem;
     font-weight: 700;
+    margin-bottom: 1.2em;
 }
 .footer-list{
     margin: 2em;
     width: 90%;
+    line-height: 2em;;
 }
 .footer-list ul{
     list-style: none;
@@ -260,8 +274,30 @@ img{
 #about p{
     margin: 1em 0;
 }
-
+#nav-btn {
+    display:none;
+}
 @media (max-width: 568px) {
+    #nav-btn {
+        display:block;
+        font-size: 1.5em;
+        float: right;
+        padding: 1.4em 1em;
+        background: transparent;
+        margin-top: -1.3em;
+        color: #5A98F2;
+    }
+    #nav-btn i{
+        font-size: 1.5em;
+    }
+    #logo-div{
+       width: 60%;
+       float: left;
+       margin-top: -1.8em;
+    }
+    .hide-nav{
+        display: none;
+    }
     #nav-links-div ul{
         list-style-type: none;
         width: 100%;
@@ -269,6 +305,9 @@ img{
         flex-wrap: wrap;
         justify-content: space-between;
         text-align: center;
+        position: relative;
+        top: -15px;
+        height: 50vh;
     }
     #nav-links-div ul li{
         width: 100%;
@@ -278,15 +317,8 @@ img{
     }
     #nav-links-div ul li a{
         text-decoration: none;
-        color: black;
+        color: white;
         padding: 1em;
-    }
-    #nav-links-div ul li:hover{
-        background: white;
-        padding: 0.7em;
-    }
-    #nav-links-div ul li a:hover{
-        color: black;
     }
     #footer-div {
         display: block;
