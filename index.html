@@ -195,10 +195,14 @@
                 </div>
             </div>
         </footer>
-          <script>const btn = document.querySelector("#nav-btn");
-const hide = document.querySelector(".hide-nav");
-btn.addEventListener("click", function(){
-    hide.classList.toggle("hide-nav");
-})</script>
+          <script>
+              const btn = document.querySelector("#nav-btn");
+                const hide = document.querySelector(".hide-nav");
+                const icon = document.querySelector(".fa-solid");
+                btn.addEventListener("click", function(){
+                    hide.classList.toggle("hide-nav");
+                    icon.classList.toggle("fa-times")
+                })
+          </script>
     </body>
 </html>
