@@ -1,15 +1,16 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html >
+<html lang="en">
     <head>
-        <meta lang="en"/>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Trafalgar Landing Page</title>
         <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     </head>
     <body>
         <header id="header">
             <nav id="nav-div">
+                <button id ="nav-btn"><i class="fa-solid fa-bars"></i></button>
                 <div id="logo-div">
                     <img src="images/headlogo.png"/>
                 </div>
@@ -38,7 +39,7 @@
             <section id="services">
                 <div id="services-info-div">
                     <h2>Our services</h2>
-                    <div class="short-border"></div>
+                    <div class="short-border center"></div>
                     <p>We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health</p>
                 </div>
                 <div id="services-div">
@@ -129,7 +130,7 @@
             <section id="latest-articles">
                 <div id="article-title-div">
                     <h2>Check out our latest article</h2>
-                    <div class="short-border"></div>
+                    <div class="short-border center"></div>
                 </div>
                 <div id="article-div">
                     <article class="article-card">
@@ -194,5 +195,10 @@
                 </div>
             </div>
         </footer>
+          <script>const btn = document.querySelector("#nav-btn");
+const hide = document.querySelector(".hide-nav");
+btn.addEventListener("click", function(){
+    hide.classList.toggle("hide-nav");
+})</script>
     </body>
 </html>
