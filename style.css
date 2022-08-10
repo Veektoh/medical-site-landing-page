@@ -287,6 +287,10 @@ img{
         margin-top: -1.3em;
         color: #5A98F2;
     }
+    #nav-btn:focus{
+        outline: none;
+        border: none;
+    }
     #nav-btn i{
         font-size: 1.5em;
     }
